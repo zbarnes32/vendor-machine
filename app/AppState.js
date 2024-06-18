@@ -8,6 +8,8 @@ class ObservableAppState extends EventEmitter {
   /**@type {import('./models/Example.js').Example[]} */
   examples = []
 
+  money = 0
+
   snacks = [
     
       new Snack (
