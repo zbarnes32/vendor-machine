@@ -1,4 +1,5 @@
 import { AppState } from "../AppState.js"
+import { setHTML } from "../utils/Writer.js"
 
 export class SnacksController {
     constructor() {
@@ -10,8 +11,10 @@ export class SnacksController {
         // ✅ console.log('Drawing the snacks', snacks)
         let innerHTMLString = ''
         snacks.forEach((snack) => innerHTMLString += snack.catalogHTMLTemplate)
+       /* Replacing with SetHTML()
         const snacksCatalog = document.getElementById('snacksCatalog')
-        snacksCatalog.innerHTML = innerHTMLString
+        snacksCatalog.innerHTML = innerHTMLString */
+        setHTML('snacksCatalog', innerHTMLString)
     }
 
 }
