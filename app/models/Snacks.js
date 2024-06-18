@@ -13,6 +13,7 @@ export class Snack {
           <div class="card-body">
             <p class="card-text fw-bold text-center">${this.name}</p>
             <p class="card-text">Price: $${this.price}</p>
+            <button onclick="purchaseItem('${this.name}')" class="btn btn-success">Buy Now</button>
           </div>
         </div>
       </div>

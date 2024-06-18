@@ -16,6 +16,8 @@ export class MoneyController {
        this.drawMoney()
     }
 
+    //Add purchaseItem()
+
     drawMoney() {
         setText("currentFunds", AppState.money.toFixed(2))
     }
